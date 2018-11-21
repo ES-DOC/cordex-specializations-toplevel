@@ -1,2 +1,2 @@
 # cordexp-specializations-toplevel
-Top level CORDEXP specialisation definitions
+Top level CORDEXP specializations
