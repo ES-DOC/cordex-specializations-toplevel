@@ -12,12 +12,12 @@ ENUMERATIONS = OrderedDict()
 # --------------------------------------------------------------------
 # CONTACT: Set to top-level specialization co-ordinator.
 # --------------------------------------------------------------------
-CONTACT = 'Sebastien Denvil (IPSL)'
+CONTACT = 'Guillaume Levavasseur (IPSL)'
 
 # --------------------------------------------------------------------
 # AUTHORS: Set to top-level specialization authors (comma delimited).
 # --------------------------------------------------------------------
-AUTHORS = 'Sebastien Denvil (IPSL)'
+AUTHORS = 'Guillaume Levavasseur (IPSL)'
 
 # --------------------------------------------------------------------
 # DESCRIPTION: Short description of the specialization.

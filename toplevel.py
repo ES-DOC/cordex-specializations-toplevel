@@ -4,23 +4,23 @@
 # --------------------------------------------------------------------
 # CONTACT: Set to top-level specialization co-ordinator.
 # --------------------------------------------------------------------
-CONTACT = 'Sebastien Denvil (IPSL)'
+CONTACT = 'Guillaume Levavasseur (IPSL)'
 
 # --------------------------------------------------------------------
 # AUTHORS: Set to top-level specialization authors (comma delimited).
 # --------------------------------------------------------------------
-AUTHORS = 'Sebastien Denvil (IPSL)'
+AUTHORS = 'Guillaume Levavasseur (IPSL)'
 
 # --------------------------------------------------------------------
 # CONTRIBUTORS: Set to top-level specialization contributors (comma delimited).
 # --------------------------------------------------------------------
-CONTRIBUTORS = 'Sebastien Denvil (IPSL), Mark Greenslade (IPSL)'
+CONTRIBUTORS = 'Guillaume Levavasseur (IPSL), Mark Greenslade (IPSL)'
 
 # --------------------------------------------------------------------
 # CHANGE HISTORY: Set to list: (version, date, who, comment).
 # --------------------------------------------------------------------
 CHANGE_HISTORY = [
-    ("0.1.0", "2018-12-01", "Sebastien Denvil (IPSL)",
+    ("0.1.0", "2018-12-01", "Guillaume Levavasseur (IPSL)",
         "Initialised"),
     ]
 
@@ -45,3 +45,12 @@ GRID = None
 PROCESSES = [
     'toplevel_radiative_forcings',
     ]
+
+# --------------------------------------------------------------------
+# SIMULATES: Realms simulated by the model
+# N.B. Official realms names are from https://github.com/WCRP-CMIP/CMIP6_CVs/blob/master/CMIP6_realm.json
+# N.B. Creation tool should include an on/off switch to allow for partial configurations (AMIP, AOGCM)
+# --------------------------------------------------------------------
+SIMULATES = [
+    "atmos",
+]
