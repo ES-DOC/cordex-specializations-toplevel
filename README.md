@@ -19,4 +19,4 @@ Realm experts wishing to standardize model documentation.
 Further Information ?
 --------------------------------------
 
-Please refer to the [splash page](http:es-doc.org) for further information.
+Please refer to the [home page](http:es-doc.org) for further information.
