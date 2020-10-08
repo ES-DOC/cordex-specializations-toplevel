@@ -2,14 +2,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Model top level</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel</dd><dt><b>Contact</b></dt><dd>Sebastien Denvil (IPSL)</dd><dt><b>Authors</b></dt><dd>Sebastien Denvil (IPSL)</dd><dt><b>Contributors</b></dt><dd>Sebastien Denvil (IPSL), Mark Greenslade (IPSL)</dd>
+        <dt><b>Description</b></dt><dd>Model top level</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel</dd><dt><b>Contact</b></dt><dd>Guillaume Levavasseur (IPSL)</dd><dt><b>Authors</b></dt><dd>Guillaume Levavasseur (IPSL)</dd><dt><b>Contributors</b></dt><dd>Guillaume Levavasseur (IPSL), Mark Greenslade (IPSL)</dd>
     </dl>
   </body>
 </html></richcontent><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="CHANGE HISTORY"><node STYLE="bubble" TEXT="0.1.0"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Version</b></dt><dd>0.1.0</dd><dt><b>Date</b></dt><dd>2018-12-01</dd><dt><b>Person</b></dt><dd>Sebastien Denvil (IPSL)</dd><dt><b>Comment</b></dt><dd>Initialised</dd>
+        <dt><b>Version</b></dt><dd>0.1.0</dd><dt><b>Date</b></dt><dd>2018-12-01</dd><dt><b>Person</b></dt><dd>Guillaume Levavasseur (IPSL)</dd><dt><b>Comment</b></dt><dd>Initialised</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="LEGEND"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="enum-choice"><richcontent TYPE="NOTE"><html>
@@ -72,28 +72,63 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Key properties of the model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties</dd>
+        <dt><b>Description</b></dt><dd>Key properties of the regional model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="flux_correction"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="model_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Flux correction properties of the model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.flux_correction</dd>
+        <dt><b>Description</b></dt><dd>Type of Regional Climate Model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.model_type</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="details"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="model_family"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how flux corrections are applied in the model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.flux_correction.details</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.flux_correction.details</dd>
+        <dt><b>Description</b></dt><dd>Type of Regional Climate Model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.model_type.model_family</dd><dt><b>Type</b></dt><dd>ENUM:model_family_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.model_type.model_family</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how flux corrections are applied in the model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.flux_correction.details</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.flux_correction.details</dd>
+        <dt><b>Description</b></dt><dd>Type of Regional Climate Model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.model_type.model_family</dd><dt><b>Type</b></dt><dd>ENUM:model_family_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.model_type.model_family</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Regional Atmospheric Climate Model"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>model_family_type.Regional Atmospheric Climate Model</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Regional Ocean Atmosphere Coupled Climate Model"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>model_family_type.Regional Ocean Atmosphere Coupled Climate Model</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Other"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>model_family_type.Other</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="details"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Provide additional details on type of the Regional Climate Model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.model_type.details</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.model_type.details</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Provide additional details on type of the Regional Climate Model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.model_type.details</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.model_type.details</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="genealogy"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -117,48 +152,6 @@
         <dt><b>Description</b></dt><dd>Year the model was released</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.genealogy.year_released</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.genealogy.year_released</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CMIP3_parent"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>CMIP3 parent if any</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.genealogy.CMIP3_parent</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.genealogy.CMIP3_parent</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>CMIP3 parent if any</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.genealogy.CMIP3_parent</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.genealogy.CMIP3_parent</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CMIP5_parent"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>CMIP5 parent if any</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.genealogy.CMIP5_parent</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.genealogy.CMIP5_parent</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>CMIP5 parent if any</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.genealogy.CMIP5_parent</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.genealogy.CMIP5_parent</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CMIP5_differences"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Briefly summarize the differences between this model and its CMIP5 parent, if applicable</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.genealogy.CMIP5_differences</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.genealogy.CMIP5_differences</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Briefly summarize the differences between this model and its CMIP5 parent, if applicable</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.genealogy.CMIP5_differences</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.genealogy.CMIP5_differences</dd>
-    </dl>
-  </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="previous_name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
@@ -173,11 +166,130 @@
         <dt><b>Description</b></dt><dd>Previously known as</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.genealogy.previous_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.genealogy.previous_name</dd>
     </dl>
   </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="difference_to_previous"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Briefly summarize the differences between this model and its previous version, if applicable</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.genealogy.difference_to_previous</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.genealogy.difference_to_previous</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Briefly summarize the differences between this model and its previous version, if applicable</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.genealogy.difference_to_previous</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.genealogy.difference_to_previous</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="cordex_domain"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>CORDEX domain</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.cordex_domain</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="domain"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>CORDEX domain</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.cordex_domain.domain</dd><dt><b>Type</b></dt><dd>ENUM:cordex_domain</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.cordex_domain.domain</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>CORDEX domain</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.cordex_domain.domain</dd><dt><b>Type</b></dt><dd>ENUM:cordex_domain</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.cordex_domain.domain</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="EUR-11"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>cordex_domain.EUR-11</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="model_calendar"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Model calendar</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.model_calendar</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="calendar"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>What calender is uded by the model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.model_calendar.calendar</dd><dt><b>Type</b></dt><dd>ENUM:calendar_used</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.model_calendar.calendar</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>What calender is uded by the model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.model_calendar.calendar</dd><dt><b>Type</b></dt><dd>ENUM:calendar_used</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.model_calendar.calendar</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="GCM-based"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>calendar_used.GCM-based</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Standard"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>calendar_used.Standard</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="spinup"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Spin-up</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.spinup</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="details"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Describe details if any spin-up is used</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.spinup.details</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.spinup.details</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Describe details if any spin-up is used</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.spinup.details</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.spinup.details</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="nudging"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Nudging</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.nudging</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="details"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Describe details if spectral nudging is used (variables, levels, etc.)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.nudging.details</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.nudging.details</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Describe details if spectral nudging is used (variables, levels, etc.)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.nudging.details</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.nudging.details</dd>
+    </dl>
+  </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="software_properties"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Software properties of model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.software_properties</dd>
+        <dt><b>Description</b></dt><dd>Software properties of the model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.software_properties</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="repository"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -240,14 +352,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overarching coupling framework for model.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.software_properties.coupler</dd><dt><b>Type</b></dt><dd>ENUM:coupler_framework</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.software_properties.coupler</dd>
+        <dt><b>Description</b></dt><dd>Overarching coupling framework for the model.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.software_properties.coupler</dd><dt><b>Type</b></dt><dd>ENUM:coupler_framework</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.software_properties.coupler</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overarching coupling framework for model.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.software_properties.coupler</dd><dt><b>Type</b></dt><dd>ENUM:coupler_framework</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.software_properties.coupler</dd>
+        <dt><b>Description</b></dt><dd>Overarching coupling framework for the model.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.software_properties.coupler</dd><dt><b>Type</b></dt><dd>ENUM:coupler_framework</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.software_properties.coupler</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="OASIS"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -299,7 +411,49 @@
         <dt><b>Description</b></dt><dd>No coupler is used</dd><dt><b>Spec. ID</b></dt><dd>coupler_framework.None</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="coupling"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="flux_correction"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Flux correction properties of the model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.flux_correction</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="details"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Describe if/how flux corrections are applied in the model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.flux_correction.details</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.flux_correction.details</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Describe if/how flux corrections are applied in the model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.flux_correction.details</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.flux_correction.details</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="reference"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Latest reference</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.reference</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="details"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Provide the latest reference describing the model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.reference.details</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.reference.details</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Provide the latest reference describing the model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.reference.details</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.reference.details</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="coupling"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -390,20 +544,6 @@
         <dt><b>Description</b></dt><dd>General overview description of tuning: explain and motivate the main targets and metrics/diagnostics retained. Document the relative weight given to climate performance metrics/diagnostics versus process oriented metrics/diagnostics, and on the possible conflicts with parameterization level tuning. In particular describe any struggle with a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.tuning_applied.description</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="global_mean_metrics_used"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>List set of metrics/diagnostics of the global mean state used in tuning model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.tuning_applied.global_mean_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.tuning_applied.global_mean_metrics_used</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>List set of metrics/diagnostics of the global mean state used in tuning model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.tuning_applied.global_mean_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.tuning_applied.global_mean_metrics_used</dd>
-    </dl>
-  </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="regional_metrics_used"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
@@ -460,277 +600,557 @@
         <dt><b>Description</b></dt><dd>Describe how fresh_water balance was obtained in the full system: in the various components independently or at the components coupling stage?</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.tuning_applied.fresh_water_balance</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.tuning_applied.fresh_water_balance</dd>
     </dl>
   </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="conservation"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="gcm_forcing"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Global convervation properties of the model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation</dd>
+        <dt><b>Description</b></dt><dd>GCM forcing</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="heat"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmos_lbc_eval"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Global heat convervation properties of the model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat</dd>
+        <dt><b>Description</b></dt><dd>Atmospheric Lateral Boundary Conditions for the evaluation experiment</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="global"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmos_lbc_eval_variables"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how heat is conserved globally</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.global</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.global</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how heat is conserved globally</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.global</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.global</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmos_ocean_interface"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how heat is conserved at the atmosphere/ocean coupling interface</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.atmos_ocean_interface</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.atmos_ocean_interface</dd>
+        <dt><b>Description</b></dt><dd>What atmospheric variables are used to drive the regional model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.atmos_lbc_eval_variables</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.atmos_lbc_eval_variables</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how heat is conserved at the atmosphere/ocean coupling interface</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.atmos_ocean_interface</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.atmos_ocean_interface</dd>
+        <dt><b>Description</b></dt><dd>What atmospheric variables are used to drive the regional model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.atmos_lbc_eval_variables</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.atmos_lbc_eval_variables</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmos_land_interface"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmos_lbc_eval_frequency"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how heat is conserved at the atmosphere/land coupling interface</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.atmos_land_interface</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.atmos_land_interface</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how heat is conserved at the atmosphere/land coupling interface</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.atmos_land_interface</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.atmos_land_interface</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmos_sea-ice_interface"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how heat is conserved at the atmosphere/sea-ice coupling interface</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.atmos_sea-ice_interface</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.atmos_sea-ice_interface</dd>
+        <dt><b>Description</b></dt><dd>At what frequency</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.atmos_lbc_eval_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.atmos_lbc_eval_frequency</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how heat is conserved at the atmosphere/sea-ice coupling interface</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.atmos_sea-ice_interface</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.atmos_sea-ice_interface</dd>
+        <dt><b>Description</b></dt><dd>At what frequency</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.atmos_lbc_eval_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.atmos_lbc_eval_frequency</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ocean_seaice_interface"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmos_lbc_eval_top"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how heat is conserved at the ocean/sea-ice coupling interface</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.ocean_seaice_interface</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.ocean_seaice_interface</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how heat is conserved at the ocean/sea-ice coupling interface</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.ocean_seaice_interface</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.ocean_seaice_interface</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="land_ocean_interface"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how heat is conserved at the land/ocean coupling interface</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.land_ocean_interface</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.land_ocean_interface</dd>
+        <dt><b>Description</b></dt><dd>Top boundary conditions</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.atmos_lbc_eval_top</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.atmos_lbc_eval_top</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how heat is conserved at the land/ocean coupling interface</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.land_ocean_interface</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.heat.land_ocean_interface</dd>
+        <dt><b>Description</b></dt><dd>Top boundary conditions</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.atmos_lbc_eval_top</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.atmos_lbc_eval_top</dd>
     </dl>
   </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="fresh_water"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="additional_information"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Global fresh water convervation properties of the model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="global"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how fresh_water is conserved globally</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.global</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.global</dd>
+        <dt><b>Description</b></dt><dd>Additional information relating to the implementation of the Atmospheric Lateral Boundary Conditions for the evaluation experiment (e.g. citations, use of non-standard datasets, etc.).</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.additional_information</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.additional_information</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how fresh_water is conserved globally</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.global</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.global</dd>
+        <dt><b>Description</b></dt><dd>Additional information relating to the implementation of the Atmospheric Lateral Boundary Conditions for the evaluation experiment (e.g. citations, use of non-standard datasets, etc.).</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.additional_information</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.additional_information</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmos_ocean_interface"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmos_lbc_scn"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how fresh_water is conserved at the atmosphere/ocean coupling interface</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.atmos_ocean_interface</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.atmos_ocean_interface</dd>
+        <dt><b>Description</b></dt><dd>Atmospheric Lateral Boundary Conditions for the historical and scenario experiments</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn</dd>
     </dl>
   </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmos_lbc_scn_variables"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how fresh_water is conserved at the atmosphere/ocean coupling interface</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.atmos_ocean_interface</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.atmos_ocean_interface</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmos_land_interface"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how fresh water is conserved at the atmosphere/land coupling interface</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.atmos_land_interface</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.atmos_land_interface</dd>
+        <dt><b>Description</b></dt><dd>What atmospheric variables are used to drive the regional model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.atmos_lbc_scn_variables</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.atmos_lbc_scn_variables</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how fresh water is conserved at the atmosphere/land coupling interface</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.atmos_land_interface</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.atmos_land_interface</dd>
+        <dt><b>Description</b></dt><dd>What atmospheric variables are used to drive the regional model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.atmos_lbc_scn_variables</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.atmos_lbc_scn_variables</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmos_sea-ice_interface"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmos_lbc_scn_frequency"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how fresh water is conserved at the atmosphere/sea-ice coupling interface</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.atmos_sea-ice_interface</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.atmos_sea-ice_interface</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how fresh water is conserved at the atmosphere/sea-ice coupling interface</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.atmos_sea-ice_interface</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.atmos_sea-ice_interface</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ocean_seaice_interface"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how fresh water is conserved at the ocean/sea-ice coupling interface</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.ocean_seaice_interface</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.ocean_seaice_interface</dd>
+        <dt><b>Description</b></dt><dd>At what frequency</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.atmos_lbc_scn_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.atmos_lbc_scn_frequency</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how fresh water is conserved at the ocean/sea-ice coupling interface</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.ocean_seaice_interface</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.ocean_seaice_interface</dd>
+        <dt><b>Description</b></dt><dd>At what frequency</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.atmos_lbc_scn_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.atmos_lbc_scn_frequency</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="runoff"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmos_lbc_scn_top"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how runoff is distributed and conserved</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.runoff</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.runoff</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Describe how runoff is distributed and conserved</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.runoff</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.runoff</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="iceberg_calving"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how iceberg calving is modeled and conserved</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.iceberg_calving</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.iceberg_calving</dd>
+        <dt><b>Description</b></dt><dd>Top boundary conditions</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.atmos_lbc_scn_top</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.atmos_lbc_scn_top</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how iceberg calving is modeled and conserved</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.iceberg_calving</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.iceberg_calving</dd>
+        <dt><b>Description</b></dt><dd>Top boundary conditions</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.atmos_lbc_scn_top</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.atmos_lbc_scn_top</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="endoreic_basins"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="additional_information"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how endoreic basins (no ocean access) are treated</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.endoreic_basins</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.endoreic_basins</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how endoreic basins (no ocean access) are treated</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.endoreic_basins</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.endoreic_basins</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="snow_accumulation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Describe how snow accumulation over land and over sea-ice is treated</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.snow_accumulation</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.snow_accumulation</dd>
+        <dt><b>Description</b></dt><dd>Additional information relating to the implementation of the Atmospheric Lateral Boundary Conditions for the historical and scenario experiments (e.g. citations, use of non-standard datasets, etc.).</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.additional_information</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.additional_information</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe how snow accumulation over land and over sea-ice is treated</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.snow_accumulation</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.fresh_water.snow_accumulation</dd>
+        <dt><b>Description</b></dt><dd>Additional information relating to the implementation of the Atmospheric Lateral Boundary Conditions for the historical and scenario experiments (e.g. citations, use of non-standard datasets, etc.).</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.additional_information</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.additional_information</dd>
     </dl>
   </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="salt"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ocean_lbc_eval"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Global salt convervation properties of the model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.salt</dd>
+        <dt><b>Description</b></dt><dd>Lower Boundary Conditions for the evaluation experiment</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ocean_seaice_interface"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="sst_lbc_eval_variable"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how salt is conserved at the ocean/sea-ice coupling interface</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.salt.ocean_seaice_interface</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.salt.ocean_seaice_interface</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how salt is conserved at the ocean/sea-ice coupling interface</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.salt.ocean_seaice_interface</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.salt.ocean_seaice_interface</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="momentum"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Global momentum convervation properties of the model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.momentum</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="details"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how momentum is conserved in the model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.momentum.details</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.momentum.details</dd>
+        <dt><b>Description</b></dt><dd>What sea surface temperature is used to drive the regional model (driving reanalysis or observations)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sst_lbc_eval_variable</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sst_lbc_eval_variable</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe if/how momentum is conserved in the model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.momentum.details</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.conservation.momentum.details</dd>
+        <dt><b>Description</b></dt><dd>What sea surface temperature is used to drive the regional model (driving reanalysis or observations)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sst_lbc_eval_variable</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sst_lbc_eval_variable</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="sst_lbc_eval_frequency"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>At what frequency</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sst_lbc_eval_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sst_lbc_eval_frequency</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>At what frequency</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sst_lbc_eval_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sst_lbc_eval_frequency</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="sic_lbc_eval_variable"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>What sea-ice concentration is used to drive the regional model (driving reanalysis or observations)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sic_lbc_eval_variable</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sic_lbc_eval_variable</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>What sea-ice concentration is used to drive the regional model (driving reanalysis or observations)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sic_lbc_eval_variable</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sic_lbc_eval_variable</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="sic_lbc_eval_frequency"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>At what frequency</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sic_lbc_eval_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sic_lbc_eval_frequency</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>At what frequency</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sic_lbc_eval_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sic_lbc_eval_frequency</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="additional_information"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Additional information relating to the implementation of the Lower Boundary Conditions for the evaluation experiment (e.g. citations, use of non-standard datasets, etc.)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.additional_information</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.additional_information</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Additional information relating to the implementation of the Lower Boundary Conditions for the evaluation experiment (e.g. citations, use of non-standard datasets, etc.)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.additional_information</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.additional_information</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ocean_lbc_scn"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Lower Boundary Conditions for the historical and scenario experiment</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_scn</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="sst_lbc_scn_frequency"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>At what frequency is sea surface temperature taken</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_scn.sst_lbc_scn_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_scn.sst_lbc_scn_frequency</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>At what frequency is sea surface temperature taken</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_scn.sst_lbc_scn_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_scn.sst_lbc_scn_frequency</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="sic_lbc_scn_frequency"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>At what frequency is sea-ice concentration taken</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_scn.sic_lbc_scn_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_scn.sic_lbc_scn_frequency</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>At what frequency is sea-ice concentration taken</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_scn.sic_lbc_scn_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_scn.sic_lbc_scn_frequency</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="additional_information"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Additional information relating to the implementation of the Lower Lateral Boundary Conditions for the historical and scenario experiments (e.g. citations, use of non-standard datasets, etc.).</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_scn.additional_information</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_scn.additional_information</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Additional information relating to the implementation of the Lower Lateral Boundary Conditions for the historical and scenario experiments (e.g. citations, use of non-standard datasets, etc.).</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_scn.additional_information</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_scn.additional_information</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="aerosol_eval"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Aerosol datasets and parameters used for the evaluation experiment</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_eval</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="aerosol_eval_dataset"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>What aerosol datasets and parameters are used to drive the regional model (driving reanalysis or observations)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_eval.aerosol_eval_dataset</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_eval.aerosol_eval_dataset</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>What aerosol datasets and parameters are used to drive the regional model (driving reanalysis or observations)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_eval.aerosol_eval_dataset</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_eval.aerosol_eval_dataset</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="aerosol_eval_frequency"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>At what frequency (climatology, transient, etc.)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_eval.aerosol_eval_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_eval.aerosol_eval_frequency</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>At what frequency (climatology, transient, etc.)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_eval.aerosol_eval_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_eval.aerosol_eval_frequency</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="additional_information"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Additional information relating to the implementation of aerosol for the evaluation experiment</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_eval.additional_information</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_eval.additional_information</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Additional information relating to the implementation of aerosol for the evaluation experiment</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_eval.additional_information</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_eval.additional_information</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="aerosol_scn"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Aerosol datasets and parameters are used for the historical and scenario experiments</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_scn</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="aerosol_scn_dataset"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>What aerosol datasets and parameters are used to drive the regional model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_scn.aerosol_scn_dataset</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_scn.aerosol_scn_dataset</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>What aerosol datasets and parameters are used to drive the regional model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_scn.aerosol_scn_dataset</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_scn.aerosol_scn_dataset</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="aerosol_scn_frequency"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>At what frequency (climatology, transient, etc.)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_scn.aerosol_scn_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_scn.aerosol_scn_frequency</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>At what frequency (climatology, transient, etc.)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_scn.aerosol_scn_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_scn.aerosol_scn_frequency</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="additional_information"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Additional information relating to the implementation of aerosol for the historical and scenario experiment</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_scn.additional_information</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_scn.additional_information</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Additional information relating to the implementation of aerosol for the historical and scenario experiment</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_scn.additional_information</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.aerosol_scn.additional_information</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ozone_eval"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Ozone datasets used for the evaluation experiment</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_eval</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ozone_eval_dataset"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>What ozone dataset is used to drive the regional model (driving reanalysis or observations)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_eval.ozone_eval_dataset</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_eval.ozone_eval_dataset</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>What ozone dataset is used to drive the regional model (driving reanalysis or observations)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_eval.ozone_eval_dataset</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_eval.ozone_eval_dataset</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ozone_eval_frequency"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>At what frequency (climatology, transient, etc.)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_eval.ozone_eval_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_eval.ozone_eval_frequency</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>At what frequency (climatology, transient, etc.)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_eval.ozone_eval_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_eval.ozone_eval_frequency</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="additional_information"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Additional information relating to the implementation of ozone for the evaluation experiment</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_eval.additional_information</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_eval.additional_information</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Additional information relating to the implementation of ozone for the evaluation experiment</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_eval.additional_information</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_eval.additional_information</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ozone_scn"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Ozone datasets used for the historical and scenario experiments</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_scn</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ozone_scn_dataset"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>What ozone dataset is used to drive the regional model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_scn.ozone_scn_dataset</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_scn.ozone_scn_dataset</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>What ozone dataset is used to drive the regional model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_scn.ozone_scn_dataset</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_scn.ozone_scn_dataset</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ozone_scn_frequency"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>At what frequency (climatology, transient, etc.)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_scn.ozone_scn_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_scn.ozone_scn_frequency</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>At what frequency (climatology, transient, etc.)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_scn.ozone_scn_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_scn.ozone_scn_frequency</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="additional_information"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Additional information relating to the implementation of ozone for the historical and scenario experiments</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_scn.additional_information</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_scn.additional_information</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Additional information relating to the implementation of ozone for the historical and scenario experiments</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_scn.additional_information</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.ozone_scn.additional_information</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="land_cover_eval"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Land cover datasets used for the evaluation experiment</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_eval</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="land_cover_eval_dataset"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>What land cover dataset is used in the regional model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_eval.land_cover_eval_dataset</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_eval.land_cover_eval_dataset</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>What land cover dataset is used in the regional model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_eval.land_cover_eval_dataset</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_eval.land_cover_eval_dataset</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="land_cover_eval_frequency"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>At what frequency (climatology, transient, etc.)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_eval.land_cover_eval_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_eval.land_cover_eval_frequency</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>At what frequency (climatology, transient, etc.)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_eval.land_cover_eval_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_eval.land_cover_eval_frequency</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="additional_information"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Additional information relating to the implementation of land cover for the evaluation experiment</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_eval.additional_information</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_eval.additional_information</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Additional information relating to the implementation of land cover for the evaluation experiment</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_eval.additional_information</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_eval.additional_information</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="land_cover_scn"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Land cover datasets used for the historical and scenario experiments</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_scn</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="land_cover_scn_dataset"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>What land cover dataset is used in the regional model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_scn.land_cover_scn_dataset</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_scn.land_cover_scn_dataset</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>What land cover dataset is used in the regional model</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_scn.land_cover_scn_dataset</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_scn.land_cover_scn_dataset</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="land_cover_scn_frequency"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>At what frequency (climatology, transient, etc.)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_scn.land_cover_scn_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_scn.land_cover_scn_frequency</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>At what frequency (climatology, transient, etc.)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_scn.land_cover_scn_frequency</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_scn.land_cover_scn_frequency</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="additional_information"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Additional information relating to the implementation of land cover for tthe historical and scenario experiments</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_scn.additional_information</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_scn.additional_information</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Additional information relating to the implementation of land cover for tthe historical and scenario experiments</dd><dt><b>Spec. ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_scn.additional_information</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.toplevel.key_properties.gcm_forcing.land_cover_scn.additional_information</dd>
     </dl>
   </body>
 </html></richcontent></node></node></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="radiative_forcings"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>

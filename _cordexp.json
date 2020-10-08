@@ -2,13 +2,13 @@
     "label": "Toplevel", 
     "description": "Model top level", 
     "id": "cordexp.toplevel", 
-    "contact": "Sebastien Denvil (IPSL)", 
+    "contact": "Guillaume Levavasseur (IPSL)", 
     "processes": [
         {
             "label": "Radiative Forcings", 
             "description": "Radiative forcings of the model for historical and scenario (aka Table 12.1 IPCC AR5)", 
             "id": "cordexp.toplevel.radiative_forcings", 
-            "contact": "Sebastien Denvil (IPSL)", 
+            "contact": "Guillaume Levavasseur (IPSL)", 
             "properties": [
                 {
                     "label": "Name", 
@@ -34,7 +34,7 @@
                     "label": "Greenhouse Gases", 
                     "description": "Greenhouse gas forcing agents", 
                     "id": "cordexp.toplevel.radiative_forcings.greenhouse_gases", 
-                    "contact": "Sebastien Denvil (IPSL)", 
+                    "contact": "Guillaume Levavasseur (IPSL)", 
                     "properties": [
                         {
                             "label": "Overview", 
@@ -421,7 +421,7 @@
                     "label": "Aerosols", 
                     "description": "Aerosol forcing agents", 
                     "id": "cordexp.toplevel.radiative_forcings.aerosols", 
-                    "contact": "Sebastien Denvil (IPSL)", 
+                    "contact": "Guillaume Levavasseur (IPSL)", 
                     "properties": [
                         {
                             "label": "Overview", 
@@ -1171,7 +1171,7 @@
                     "label": "Other", 
                     "description": "Miscellaneous forcing agents", 
                     "id": "cordexp.toplevel.radiative_forcings.other", 
-                    "contact": "Sebastien Denvil (IPSL)", 
+                    "contact": "Guillaume Levavasseur (IPSL)", 
                     "properties": [
                         {
                             "label": "Overview", 
@@ -1308,9 +1308,9 @@
     ], 
     "keyProperties": {
         "label": "Key Properties", 
-        "description": "Key properties of the model", 
+        "description": "Key properties of the regional model", 
         "id": "cordexp.toplevel.key_properties", 
-        "contact": "Sebastien Denvil (IPSL)", 
+        "contact": "Guillaume Levavasseur (IPSL)", 
         "properties": [
             {
                 "label": "Name", 
@@ -1342,18 +1342,46 @@
         ], 
         "propertySets": [
             {
-                "label": "Flux Correction", 
-                "description": "Flux correction properties of the model", 
-                "id": "cordexp.toplevel.key_properties.flux_correction", 
+                "label": "Model Type", 
+                "description": "Type of Regional Climate Model", 
+                "id": "cordexp.toplevel.key_properties.model_type", 
                 "properties": [
                     {
-                        "label": "Details", 
-                        "description": "Describe if/how flux corrections are applied in the model", 
-                        "id": "cordexp.toplevel.key_properties.flux_correction.details", 
+                        "label": "Model Family", 
+                        "description": "Type of Regional Climate Model", 
+                        "id": "cordexp.toplevel.key_properties.model_type.model_family", 
                         "cardinality": "1.1", 
+                        "type": "enum", 
+                        "is_cim_property": false, 
+                        "enum": {
+                            "label": "Model Family Type", 
+                            "description": "Type of regional model", 
+                            "isOpen": true, 
+                            "choices": [
+                                {
+                                    "label": "Regional Atmospheric Climate Model", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Regional Ocean Atmosphere Coupled Climate Model", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Other", 
+                                    "description": null
+                                }
+                            ]
+                        }, 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Details", 
+                        "description": "Provide additional details on type of the Regional Climate Model", 
+                        "id": "cordexp.toplevel.key_properties.model_type.details", 
+                        "cardinality": "0.1", 
                         "type": "l-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 1
+                        "uiOrdinal": 2
                     }
                 ]
             }, 
@@ -1372,46 +1400,118 @@
                         "uiOrdinal": 1
                     }, 
                     {
-                        "label": "CMIP3 Parent", 
-                        "description": "CMIP3 parent if any", 
-                        "id": "cordexp.toplevel.key_properties.genealogy.CMIP3_parent", 
-                        "cardinality": "0.1", 
-                        "type": "str", 
-                        "is_cim_property": false, 
-                        "uiOrdinal": 2
-                    }, 
-                    {
-                        "label": "CMIP5 Parent", 
-                        "description": "CMIP5 parent if any", 
-                        "id": "cordexp.toplevel.key_properties.genealogy.CMIP5_parent", 
-                        "cardinality": "0.1", 
-                        "type": "str", 
-                        "is_cim_property": false, 
-                        "uiOrdinal": 3
-                    }, 
-                    {
-                        "label": "CMIP5 Differences", 
-                        "description": "Briefly summarize the differences between this model and its CMIP5 parent, if applicable", 
-                        "id": "cordexp.toplevel.key_properties.genealogy.CMIP5_differences", 
-                        "cardinality": "0.1", 
-                        "type": "l-str", 
-                        "is_cim_property": false, 
-                        "uiOrdinal": 4
-                    }, 
-                    {
                         "label": "Previous Name", 
                         "description": "Previously known as", 
                         "id": "cordexp.toplevel.key_properties.genealogy.previous_name", 
                         "cardinality": "0.1", 
                         "type": "str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 5
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Difference To Previous", 
+                        "description": "Briefly summarize the differences between this model and its previous version, if applicable", 
+                        "id": "cordexp.toplevel.key_properties.genealogy.difference_to_previous", 
+                        "cardinality": "0.1", 
+                        "type": "l-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 3
+                    }
+                ]
+            }, 
+            {
+                "label": "Cordex Domain", 
+                "description": "CORDEX domain", 
+                "id": "cordexp.toplevel.key_properties.cordex_domain", 
+                "properties": [
+                    {
+                        "label": "Domain", 
+                        "description": "CORDEX domain", 
+                        "id": "cordexp.toplevel.key_properties.cordex_domain.domain", 
+                        "cardinality": "0.1", 
+                        "type": "enum", 
+                        "is_cim_property": false, 
+                        "enum": {
+                            "label": "Cordex Domain", 
+                            "description": "Select the CORDEX domain", 
+                            "isOpen": true, 
+                            "choices": [
+                                {
+                                    "label": "EUR-11", 
+                                    "description": null
+                                }
+                            ]
+                        }, 
+                        "uiOrdinal": 1
+                    }
+                ]
+            }, 
+            {
+                "label": "Model Calendar", 
+                "description": "Model calendar", 
+                "id": "cordexp.toplevel.key_properties.model_calendar", 
+                "properties": [
+                    {
+                        "label": "Calendar", 
+                        "description": "What calender is uded by the model", 
+                        "id": "cordexp.toplevel.key_properties.model_calendar.calendar", 
+                        "cardinality": "0.1", 
+                        "type": "enum", 
+                        "is_cim_property": false, 
+                        "enum": {
+                            "label": "Calendar Used", 
+                            "description": "What calendar is used by the model", 
+                            "isOpen": true, 
+                            "choices": [
+                                {
+                                    "label": "GCM-based", 
+                                    "description": null
+                                }, 
+                                {
+                                    "label": "Standard", 
+                                    "description": null
+                                }
+                            ]
+                        }, 
+                        "uiOrdinal": 1
+                    }
+                ]
+            }, 
+            {
+                "label": "Spinup", 
+                "description": "Spin-up", 
+                "id": "cordexp.toplevel.key_properties.spinup", 
+                "properties": [
+                    {
+                        "label": "Details", 
+                        "description": "Describe details if any spin-up is used", 
+                        "id": "cordexp.toplevel.key_properties.spinup.details", 
+                        "cardinality": "0.1", 
+                        "type": "l-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 1
+                    }
+                ]
+            }, 
+            {
+                "label": "Nudging", 
+                "description": "Nudging", 
+                "id": "cordexp.toplevel.key_properties.nudging", 
+                "properties": [
+                    {
+                        "label": "Details", 
+                        "description": "Describe details if spectral nudging is used (variables, levels, etc.)", 
+                        "id": "cordexp.toplevel.key_properties.nudging.details", 
+                        "cardinality": "0.1", 
+                        "type": "l-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 1
                     }
                 ]
             }, 
             {
                 "label": "Software Properties", 
-                "description": "Software properties of model", 
+                "description": "Software properties of the model", 
                 "id": "cordexp.toplevel.key_properties.software_properties", 
                 "properties": [
                     {
@@ -1452,7 +1552,7 @@
                     }, 
                     {
                         "label": "Coupler", 
-                        "description": "Overarching coupling framework for model.", 
+                        "description": "Overarching coupling framework for the model.", 
                         "id": "cordexp.toplevel.key_properties.software_properties.coupler", 
                         "cardinality": "0.1", 
                         "type": "enum", 
@@ -1495,6 +1595,38 @@
                         "uiOrdinal": 5
                     }
                 ]
+            }, 
+            {
+                "label": "Flux Correction", 
+                "description": "Flux correction properties of the model", 
+                "id": "cordexp.toplevel.key_properties.flux_correction", 
+                "properties": [
+                    {
+                        "label": "Details", 
+                        "description": "Describe if/how flux corrections are applied in the model", 
+                        "id": "cordexp.toplevel.key_properties.flux_correction.details", 
+                        "cardinality": "1.1", 
+                        "type": "l-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 1
+                    }
+                ]
+            }, 
+            {
+                "label": "Reference", 
+                "description": "Latest reference", 
+                "id": "cordexp.toplevel.key_properties.reference", 
+                "properties": [
+                    {
+                        "label": "Details", 
+                        "description": "Provide the latest reference describing the model", 
+                        "id": "cordexp.toplevel.key_properties.reference.details", 
+                        "cardinality": "1.1", 
+                        "type": "l-str", 
+                        "is_cim_property": false, 
+                        "uiOrdinal": 1
+                    }
+                ]
             }
         ], 
         "subProcesses": [
@@ -1502,7 +1634,7 @@
                 "label": "Coupling", 
                 "description": "", 
                 "id": "cordexp.toplevel.key_properties.coupling", 
-                "contact": "Sebastien Denvil (IPSL)", 
+                "contact": "Guillaume Levavasseur (IPSL)", 
                 "properties": [
                     {
                         "label": "Overview", 
@@ -1565,7 +1697,7 @@
                 "label": "Tuning Applied", 
                 "description": "Tuning methodology for model", 
                 "id": "cordexp.toplevel.key_properties.tuning_applied", 
-                "contact": "Sebastien Denvil (IPSL)", 
+                "contact": "Guillaume Levavasseur (IPSL)", 
                 "properties": [
                     {
                         "label": "Overview", 
@@ -1586,22 +1718,13 @@
                         "uiOrdinal": 2
                     }, 
                     {
-                        "label": "Global Mean Metrics Used", 
-                        "description": "List set of metrics/diagnostics of the global mean state used in tuning model", 
-                        "id": "cordexp.toplevel.key_properties.tuning_applied.global_mean_metrics_used", 
-                        "cardinality": "0.1", 
-                        "type": "cs-str", 
-                        "is_cim_property": false, 
-                        "uiOrdinal": 3
-                    }, 
-                    {
                         "label": "Regional Metrics Used", 
                         "description": "List of regional metrics/diagnostics of mean state (e.g THC, AABW, regional means etc) used in tuning model/component", 
                         "id": "cordexp.toplevel.key_properties.tuning_applied.regional_metrics_used", 
                         "cardinality": "0.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 4
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "Trend Metrics Used", 
@@ -1610,7 +1733,7 @@
                         "cardinality": "0.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 5
+                        "uiOrdinal": 4
                     }, 
                     {
                         "label": "Energy Balance", 
@@ -1619,7 +1742,7 @@
                         "cardinality": "1.1", 
                         "type": "str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 6
+                        "uiOrdinal": 5
                     }, 
                     {
                         "label": "Fresh Water Balance", 
@@ -1628,20 +1751,20 @@
                         "cardinality": "1.1", 
                         "type": "str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 7
+                        "uiOrdinal": 6
                     }
                 ]
             }, 
             {
-                "label": "Conservation", 
-                "description": "Global convervation properties of the model", 
-                "id": "cordexp.toplevel.key_properties.conservation", 
-                "contact": "Sebastien Denvil (IPSL)", 
+                "label": "Gcm Forcing", 
+                "description": "GCM forcing", 
+                "id": "cordexp.toplevel.key_properties.gcm_forcing", 
+                "contact": "Guillaume Levavasseur (IPSL)", 
                 "properties": [
                     {
                         "label": "Overview", 
-                        "description": "Overview of global convervation properties of the model in toplevel model.", 
-                        "id": "cordexp.toplevel.key_properties.conservation.overview", 
+                        "description": "Overview of gcm forcing in toplevel model.", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.overview", 
                         "cardinality": "0.1", 
                         "type": "str", 
                         "is_cim_property": true, 
@@ -1650,183 +1773,378 @@
                 ], 
                 "propertySets": [
                     {
-                        "label": "Heat", 
-                        "description": "Global heat convervation properties of the model", 
-                        "id": "cordexp.toplevel.key_properties.conservation.heat", 
+                        "label": "Atmos Lbc Eval", 
+                        "description": "Atmospheric Lateral Boundary Conditions for the evaluation experiment", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval", 
                         "properties": [
                             {
-                                "label": "Global", 
-                                "description": "Describe if/how heat is conserved globally", 
-                                "id": "cordexp.toplevel.key_properties.conservation.heat.global", 
-                                "cardinality": "1.1", 
+                                "label": "Atmos Lbc Eval Variables", 
+                                "description": "What atmospheric variables are used to drive the regional model", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.atmos_lbc_eval_variables", 
+                                "cardinality": "0.1", 
                                 "type": "l-str", 
                                 "is_cim_property": false, 
                                 "uiOrdinal": 1
                             }, 
                             {
-                                "label": "Atmos Ocean Interface", 
-                                "description": "Describe if/how heat is conserved at the atmosphere/ocean coupling interface", 
-                                "id": "cordexp.toplevel.key_properties.conservation.heat.atmos_ocean_interface", 
+                                "label": "Atmos Lbc Eval Frequency", 
+                                "description": "At what frequency", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.atmos_lbc_eval_frequency", 
                                 "cardinality": "0.1", 
                                 "type": "l-str", 
                                 "is_cim_property": false, 
                                 "uiOrdinal": 2
                             }, 
                             {
-                                "label": "Atmos Land Interface", 
-                                "description": "Describe if/how heat is conserved at the atmosphere/land coupling interface", 
-                                "id": "cordexp.toplevel.key_properties.conservation.heat.atmos_land_interface", 
-                                "cardinality": "1.1", 
+                                "label": "Atmos Lbc Eval Top", 
+                                "description": "Top boundary conditions", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.atmos_lbc_eval_top", 
+                                "cardinality": "0.1", 
                                 "type": "l-str", 
                                 "is_cim_property": false, 
                                 "uiOrdinal": 3
                             }, 
                             {
-                                "label": "Atmos Sea-ice Interface", 
-                                "description": "Describe if/how heat is conserved at the atmosphere/sea-ice coupling interface", 
-                                "id": "cordexp.toplevel.key_properties.conservation.heat.atmos_sea-ice_interface", 
+                                "label": "Additional Information", 
+                                "description": "Additional information relating to the implementation of the Atmospheric Lateral Boundary Conditions for the evaluation experiment (e.g. citations, use of non-standard datasets, etc.).", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_eval.additional_information", 
                                 "cardinality": "0.1", 
                                 "type": "l-str", 
                                 "is_cim_property": false, 
                                 "uiOrdinal": 4
-                            }, 
-                            {
-                                "label": "Ocean Seaice Interface", 
-                                "description": "Describe if/how heat is conserved at the ocean/sea-ice coupling interface", 
-                                "id": "cordexp.toplevel.key_properties.conservation.heat.ocean_seaice_interface", 
-                                "cardinality": "0.1", 
-                                "type": "l-str", 
-                                "is_cim_property": false, 
-                                "uiOrdinal": 5
-                            }, 
-                            {
-                                "label": "Land Ocean Interface", 
-                                "description": "Describe if/how heat is conserved at the land/ocean coupling interface", 
-                                "id": "cordexp.toplevel.key_properties.conservation.heat.land_ocean_interface", 
-                                "cardinality": "0.1", 
-                                "type": "l-str", 
-                                "is_cim_property": false, 
-                                "uiOrdinal": 6
                             }
                         ]
                     }, 
                     {
-                        "label": "Fresh Water", 
-                        "description": "Global fresh water convervation properties of the model", 
-                        "id": "cordexp.toplevel.key_properties.conservation.fresh_water", 
+                        "label": "Atmos Lbc Scn", 
+                        "description": "Atmospheric Lateral Boundary Conditions for the historical and scenario experiments", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn", 
                         "properties": [
                             {
-                                "label": "Global", 
-                                "description": "Describe if/how fresh_water is conserved globally", 
-                                "id": "cordexp.toplevel.key_properties.conservation.fresh_water.global", 
-                                "cardinality": "1.1", 
+                                "label": "Atmos Lbc Scn Variables", 
+                                "description": "What atmospheric variables are used to drive the regional model", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.atmos_lbc_scn_variables", 
+                                "cardinality": "0.1", 
                                 "type": "l-str", 
                                 "is_cim_property": false, 
                                 "uiOrdinal": 1
                             }, 
                             {
-                                "label": "Atmos Ocean Interface", 
-                                "description": "Describe if/how fresh_water is conserved at the atmosphere/ocean coupling interface", 
-                                "id": "cordexp.toplevel.key_properties.conservation.fresh_water.atmos_ocean_interface", 
+                                "label": "Atmos Lbc Scn Frequency", 
+                                "description": "At what frequency", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.atmos_lbc_scn_frequency", 
                                 "cardinality": "0.1", 
                                 "type": "l-str", 
                                 "is_cim_property": false, 
                                 "uiOrdinal": 2
                             }, 
                             {
-                                "label": "Atmos Land Interface", 
-                                "description": "Describe if/how fresh water is conserved at the atmosphere/land coupling interface", 
-                                "id": "cordexp.toplevel.key_properties.conservation.fresh_water.atmos_land_interface", 
-                                "cardinality": "1.1", 
+                                "label": "Atmos Lbc Scn Top", 
+                                "description": "Top boundary conditions", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.atmos_lbc_scn_top", 
+                                "cardinality": "0.1", 
                                 "type": "l-str", 
                                 "is_cim_property": false, 
                                 "uiOrdinal": 3
                             }, 
                             {
-                                "label": "Atmos Sea-ice Interface", 
-                                "description": "Describe if/how fresh water is conserved at the atmosphere/sea-ice coupling interface", 
-                                "id": "cordexp.toplevel.key_properties.conservation.fresh_water.atmos_sea-ice_interface", 
+                                "label": "Additional Information", 
+                                "description": "Additional information relating to the implementation of the Atmospheric Lateral Boundary Conditions for the historical and scenario experiments (e.g. citations, use of non-standard datasets, etc.).", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.atmos_lbc_scn.additional_information", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 4
+                            }
+                        ]
+                    }, 
+                    {
+                        "label": "Ocean Lbc Eval", 
+                        "description": "Lower Boundary Conditions for the evaluation experiment", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval", 
+                        "properties": [
+                            {
+                                "label": "Sst Lbc Eval Variable", 
+                                "description": "What sea surface temperature is used to drive the regional model (driving reanalysis or observations)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sst_lbc_eval_variable", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Sst Lbc Eval Frequency", 
+                                "description": "At what frequency", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sst_lbc_eval_frequency", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Sic Lbc Eval Variable", 
+                                "description": "What sea-ice concentration is used to drive the regional model (driving reanalysis or observations)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sic_lbc_eval_variable", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 3
+                            }, 
+                            {
+                                "label": "Sic Lbc Eval Frequency", 
+                                "description": "At what frequency", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.sic_lbc_eval_frequency", 
                                 "cardinality": "0.1", 
                                 "type": "l-str", 
                                 "is_cim_property": false, 
                                 "uiOrdinal": 4
                             }, 
                             {
-                                "label": "Ocean Seaice Interface", 
-                                "description": "Describe if/how fresh water is conserved at the ocean/sea-ice coupling interface", 
-                                "id": "cordexp.toplevel.key_properties.conservation.fresh_water.ocean_seaice_interface", 
+                                "label": "Additional Information", 
+                                "description": "Additional information relating to the implementation of the Lower Boundary Conditions for the evaluation experiment (e.g. citations, use of non-standard datasets, etc.)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_eval.additional_information", 
                                 "cardinality": "0.1", 
                                 "type": "l-str", 
                                 "is_cim_property": false, 
                                 "uiOrdinal": 5
-                            }, 
-                            {
-                                "label": "Runoff", 
-                                "description": "Describe how runoff is distributed and conserved", 
-                                "id": "cordexp.toplevel.key_properties.conservation.fresh_water.runoff", 
-                                "cardinality": "0.1", 
-                                "type": "l-str", 
-                                "is_cim_property": false, 
-                                "uiOrdinal": 6
-                            }, 
-                            {
-                                "label": "Iceberg Calving", 
-                                "description": "Describe if/how iceberg calving is modeled and conserved", 
-                                "id": "cordexp.toplevel.key_properties.conservation.fresh_water.iceberg_calving", 
-                                "cardinality": "0.1", 
-                                "type": "l-str", 
-                                "is_cim_property": false, 
-                                "uiOrdinal": 7
-                            }, 
-                            {
-                                "label": "Endoreic Basins", 
-                                "description": "Describe if/how endoreic basins (no ocean access) are treated", 
-                                "id": "cordexp.toplevel.key_properties.conservation.fresh_water.endoreic_basins", 
-                                "cardinality": "0.1", 
-                                "type": "l-str", 
-                                "is_cim_property": false, 
-                                "uiOrdinal": 8
-                            }, 
-                            {
-                                "label": "Snow Accumulation", 
-                                "description": "Describe how snow accumulation over land and over sea-ice is treated", 
-                                "id": "cordexp.toplevel.key_properties.conservation.fresh_water.snow_accumulation", 
-                                "cardinality": "0.1", 
-                                "type": "l-str", 
-                                "is_cim_property": false, 
-                                "uiOrdinal": 9
                             }
                         ]
                     }, 
                     {
-                        "label": "Salt", 
-                        "description": "Global salt convervation properties of the model", 
-                        "id": "cordexp.toplevel.key_properties.conservation.salt", 
+                        "label": "Ocean Lbc Scn", 
+                        "description": "Lower Boundary Conditions for the historical and scenario experiment", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_scn", 
                         "properties": [
                             {
-                                "label": "Ocean Seaice Interface", 
-                                "description": "Describe if/how salt is conserved at the ocean/sea-ice coupling interface", 
-                                "id": "cordexp.toplevel.key_properties.conservation.salt.ocean_seaice_interface", 
+                                "label": "Sst Lbc Scn Frequency", 
+                                "description": "At what frequency is sea surface temperature taken", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_scn.sst_lbc_scn_frequency", 
                                 "cardinality": "0.1", 
                                 "type": "l-str", 
                                 "is_cim_property": false, 
                                 "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Sic Lbc Scn Frequency", 
+                                "description": "At what frequency is sea-ice concentration taken", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_scn.sic_lbc_scn_frequency", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Additional Information", 
+                                "description": "Additional information relating to the implementation of the Lower Lateral Boundary Conditions for the historical and scenario experiments (e.g. citations, use of non-standard datasets, etc.).", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ocean_lbc_scn.additional_information", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 3
                             }
                         ]
                     }, 
                     {
-                        "label": "Momentum", 
-                        "description": "Global momentum convervation properties of the model", 
-                        "id": "cordexp.toplevel.key_properties.conservation.momentum", 
+                        "label": "Aerosol Eval", 
+                        "description": "Aerosol datasets and parameters used for the evaluation experiment", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.aerosol_eval", 
                         "properties": [
                             {
-                                "label": "Details", 
-                                "description": "Describe if/how momentum is conserved in the model", 
-                                "id": "cordexp.toplevel.key_properties.conservation.momentum.details", 
+                                "label": "Aerosol Eval Dataset", 
+                                "description": "What aerosol datasets and parameters are used to drive the regional model (driving reanalysis or observations)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.aerosol_eval.aerosol_eval_dataset", 
                                 "cardinality": "0.1", 
                                 "type": "l-str", 
                                 "is_cim_property": false, 
                                 "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Aerosol Eval Frequency", 
+                                "description": "At what frequency (climatology, transient, etc.)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.aerosol_eval.aerosol_eval_frequency", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Additional Information", 
+                                "description": "Additional information relating to the implementation of aerosol for the evaluation experiment", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.aerosol_eval.additional_information", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 3
+                            }
+                        ]
+                    }, 
+                    {
+                        "label": "Aerosol Scn", 
+                        "description": "Aerosol datasets and parameters are used for the historical and scenario experiments", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.aerosol_scn", 
+                        "properties": [
+                            {
+                                "label": "Aerosol Scn Dataset", 
+                                "description": "What aerosol datasets and parameters are used to drive the regional model", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.aerosol_scn.aerosol_scn_dataset", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Aerosol Scn Frequency", 
+                                "description": "At what frequency (climatology, transient, etc.)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.aerosol_scn.aerosol_scn_frequency", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Additional Information", 
+                                "description": "Additional information relating to the implementation of aerosol for the historical and scenario experiment", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.aerosol_scn.additional_information", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 3
+                            }
+                        ]
+                    }, 
+                    {
+                        "label": "Ozone Eval", 
+                        "description": "Ozone datasets used for the evaluation experiment", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.ozone_eval", 
+                        "properties": [
+                            {
+                                "label": "Ozone Eval Dataset", 
+                                "description": "What ozone dataset is used to drive the regional model (driving reanalysis or observations)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ozone_eval.ozone_eval_dataset", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Ozone Eval Frequency", 
+                                "description": "At what frequency (climatology, transient, etc.)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ozone_eval.ozone_eval_frequency", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Additional Information", 
+                                "description": "Additional information relating to the implementation of ozone for the evaluation experiment", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ozone_eval.additional_information", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 3
+                            }
+                        ]
+                    }, 
+                    {
+                        "label": "Ozone Scn", 
+                        "description": "Ozone datasets used for the historical and scenario experiments", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.ozone_scn", 
+                        "properties": [
+                            {
+                                "label": "Ozone Scn Dataset", 
+                                "description": "What ozone dataset is used to drive the regional model", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ozone_scn.ozone_scn_dataset", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Ozone Scn Frequency", 
+                                "description": "At what frequency (climatology, transient, etc.)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ozone_scn.ozone_scn_frequency", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Additional Information", 
+                                "description": "Additional information relating to the implementation of ozone for the historical and scenario experiments", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.ozone_scn.additional_information", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 3
+                            }
+                        ]
+                    }, 
+                    {
+                        "label": "Land Cover Eval", 
+                        "description": "Land cover datasets used for the evaluation experiment", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.land_cover_eval", 
+                        "properties": [
+                            {
+                                "label": "Land Cover Eval Dataset", 
+                                "description": "What land cover dataset is used in the regional model", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.land_cover_eval.land_cover_eval_dataset", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Land Cover Eval Frequency", 
+                                "description": "At what frequency (climatology, transient, etc.)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.land_cover_eval.land_cover_eval_frequency", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Additional Information", 
+                                "description": "Additional information relating to the implementation of land cover for the evaluation experiment", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.land_cover_eval.additional_information", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 3
+                            }
+                        ]
+                    }, 
+                    {
+                        "label": "Land Cover Scn", 
+                        "description": "Land cover datasets used for the historical and scenario experiments", 
+                        "id": "cordexp.toplevel.key_properties.gcm_forcing.land_cover_scn", 
+                        "properties": [
+                            {
+                                "label": "Land Cover Scn Dataset", 
+                                "description": "What land cover dataset is used in the regional model", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.land_cover_scn.land_cover_scn_dataset", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Land Cover Scn Frequency", 
+                                "description": "At what frequency (climatology, transient, etc.)", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.land_cover_scn.land_cover_scn_frequency", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Additional Information", 
+                                "description": "Additional information relating to the implementation of land cover for tthe historical and scenario experiments", 
+                                "id": "cordexp.toplevel.key_properties.gcm_forcing.land_cover_scn.additional_information", 
+                                "cardinality": "0.1", 
+                                "type": "l-str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 3
                             }
                         ]
                     }
